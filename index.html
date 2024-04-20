@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <h1>TIC TAC TOE</h1>
+</header>
+<div class="main-container">
+ <div id="title"><h2 id="titletxt" style="font-size: xx-large;">CLICK BEGIN TO START THE GAME</h2></div>
+    <div class="container">
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false"  class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+        <div data-Clicked = "false" class="box"></div>
+    </div>
+    <br><br><br><br><br>
+  <div class="button-container">
+    <button class="start-btn" id="begin-btn" type="button" onclick="begin()">BEGIN</button>
+    <button class="reset-btn" id="reset-btn" type="button" onclick="reset()" >RESET</button>
+  </div> 
+</div>
+    
+</body>
+ <script src="logic.js"></script>
+</html>

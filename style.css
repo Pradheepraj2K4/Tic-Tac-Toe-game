@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #614BC3;
+    color: white;
+    text-align: center;
+    height: 8vh;
+}
+h1{
+    padding: 10px;
+}
+.main-container{
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    display: block;
+    background-color: #33BBC5;
+    margin-top: 1cm;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+#title{
+    position: absolute;
+    background-color: rgba(250, 235, 215, 0.942);
+    height: 3cm;
+    width: inherit;
+    text-align: center;
+    margin-top: 5.5cm;
+    box-shadow: #3333 0px 4px 4px 0px;
+    animation: slide 1s; 
+}
+h2{
+    margin: 30px;
+    animation: breathing alternate infinite ease-in-out 500ms;
+}
+.container{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+
+}
+.box{
+    background-color: #85E6C5;
+    text-align: center;
+    padding: 10px;
+    font-size: 100px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Carter One', cursive;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.start-btn{
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #614BC3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.reset-btn{
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    font-weight: bolder;
+}
+.boxnewclass{
+ background-color: #c8f1f2;
+ color: rgba(0, 0, 0, 0.404);
+}
+@media screen and (max-width: 1163px) {
+  h2{
+    margin-top: 20px;
+  }  
+}   
+@media screen and (max-width: 900px) {
+    .main-container{
+        width: 80vw;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+  } 
+@keyframes slide {
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: 5.5cm;
+    }
+}
+@keyframes breathing {
+    0%{
+        font-size: 2em;
+    }
+    100%{
+        font-size: 1.9em;
+    }
+}
